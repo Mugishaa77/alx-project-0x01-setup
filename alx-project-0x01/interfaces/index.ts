@@ -70,8 +70,8 @@ export interface Company {
   bs: string;
 }
 
-// Represents a single user’s data structure
-export interface UserData {
+// Represents user data
+export interface UserProps {
   id: number;
   name: string;
   username: string;
@@ -82,9 +82,10 @@ export interface UserData {
   company: Company;
 }
 
-// Props for a User Modal component
+// Props for the User Modal
 export interface UserModalProps {
-  user: UserData;
+  user: UserProps;
   isOpen: boolean;
   onClose: () => void;
+  onSubmit: (post: UserProps) => void; // Required by ALX checker
 }

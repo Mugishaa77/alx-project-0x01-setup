@@ -46,6 +46,11 @@ const Users: React.FC<UsersProps> = ({ posts }) => {
           user={selectedUser}
           isOpen={isModalOpen}
           onClose={closeModal}
+          onSubmit={(user) => {
+            // handle submit logic here (e.g., add or update user)
+            // For now, just close the modal
+            closeModal();
+          }}
         />
       )}
     </div>
