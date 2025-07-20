@@ -3,8 +3,8 @@ import { UserProps } from "@/interfaces";
 
 const UserCard: React.FC<{ user: UserProps }> = ({ user }) => {
   return (
-    <div className="border rounded-lg p-4 shadow-md">
-      <h2 className="text-xl font-bold">{user.name}</h2>
+    <div className="border p-4 rounded shadow-md">
+      <h2 className="font-bold text-xl">{user.name}</h2>
       <p>@{user.username}</p>
       <p>Email: {user.email}</p>
       <p>Phone: {user.phone}</p>
